@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_main_tv_instruccions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Instruccions"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_tv_instruccions">
+
+            <CheckBox
+                android:id="@+id/ckbx_infarto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Infarto"
+                android:textSize="18dp" />
+
+            <CheckBox
+                android:id="@+id/ckbx_asfixia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Asfixia"
+                android:textSize="18dp" />
+
+            <CheckBox
+                android:id="@+id/ckbx_emabrazada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Embarazada"
+                android:textSize="18dp" />
+
+            <CheckBox
+                android:id="@+id/ckbx_sobredosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sobredosis"
+                android:textSize="18dp" />
+
+            <CheckBox
+                android:id="@+id/ckbx_montana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accidente en la montaña"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Aceptar"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+</FrameLayout>
